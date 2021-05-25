@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Matthieu FOURNET</title>
+
+</head>
+
+<body>
+    <!--div qui englobe tout-->
+    <div class="container-fluid bg-dark d-flex flex-column">
+        <!--navbar top-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-link" href="#">FOURNET Matthieu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Mes Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mes formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactez-moi</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                  N'hesitez pas a utiliser le formulaire de contact pour m'envoyer un mail
+                </span>
+                </div>
+            </div>
+        </nav>
+        <!--haut de page avec description-->
+        <div class="d-flex lg-flex-row justify-content-around sm-flex-column" style="margin-top: 55px;">
+            <img src="masterchef.jpg" alt="masterchef" class="">
+            <div class="d-flex flex-column" style="margin-top: 70px;">
+                <h3 style="color:floralwhite;" class="flex">FOURNET Matthieu</h3>
+                <p style="color:floralwhite;">créateur devellopeur d’applications</p>
+                <p style="color:floralwhite;">legere description de moi </p>
+            </div>
+            <p>casse-couille</p>
+        </div>
+        <!--partie mes projets-->
+        <div style="color:floralwhite;">
+            <h1>Mes Projet</h1>
+            <ol>
+                <li>Jarditou
+                    <ul>
+                        <li>dévelloper un site de jardinage en formation TBDA en utilisant html css bootstrap JS PHP et SQL</li>
+                    </ul>
+                </li>
+                <li>Ce CV
+                    <ul>
+                        <li>développement de ce cv a l'aide des meme langages/outil que le projet jarditou</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <!--partie mes formations-->
+        <div style="color:floralwhite;">
+            <h1>Mes Formations</h1>
+            <ol>
+                <li>Brevet des colléges
+                    <ul>
+                        <li>Session 2014-2015</li>
+                        <li>Lycée Lamarck Albert</li>
+                        <li>obtenu mention bien</li>
+                    </ul>
+                </li>
+                <li>Bac Scientifique option Science et vie de la Terre
+                    <ul>
+                        <li>Session 2017-2018</li>
+                        <li>Lycée Lamarck Albert</li>
+                        <li>Non obtenu</li>
+                    </ul>
+                </li>
+                <li>Formation Profesionnel Createur Développeur d'Application
+                    <ul>
+                        <li>2021</li>
+                        <li>Centre de Formation AFPA Amiens</li>
+                        <li>en cours</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div style="color:floralwhite;">
+            <!--partie contact-->
+            <h1>Contacts</h1>
+            <form id="form" action="#" method="POST">
+                <fieldset>
+                    <legend>Vos Coordonées</legend>
+                    <label for="email">Entrez Votre Mail :</label><br>
+                    <input type="text" name="email" id="email" class="form-control">
+                    <div id="emailErr" class="text-danger">
+                    </div>
+                    <label for="nom">Veuillez entrez votre Nom :</label><br>
+                    <input type="text" class="form-control" id="nom">
+                    <div id="nomErr" class="text-danger">
+                    </div>
+                    <label for="prenom">Veuillez entrez votre Prénom :</label><br>
+                    <input type="text" class="form-control" id="prenom">
+                    <div id="prenomErr" class="text-danger">
+                    </div>
+                    <label for="tel">Entrez votre numéro de téléphone si vous le souhaitez :</label><br>
+                    <input type="tel" class="form-control" id="tel">
+                    <div id="telErr" class="text-danger">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Votre Demande</legend>
+                    <label for="sujet">Sujet</label>
+                    <select class="form-select">
+						<option selected disabled>Veuillez séléctionner un sujet</option>
+						<option value="entretien">Demande d'entretien</option>
+						<option value="Question">Question sur votre disponibilité ou vous même</option>
+						<option value="Autre">Autre</option>
+					</select>
+                    <br> <label for="demande"> Votre Demande :</label>
+                    <textarea name="commentaire" class="form-control" rows="3"></textarea>
+                </fieldset>
+                <button type="submit" id="bouton_envoi" class="btn btn-primary">Envoyer</button>
+            </form><br>
+
+        </div>
+        <!--navbar du bas avec coordonées-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-link" href="#">FOURNET Matthieu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">fournet.matthieu8@gmail.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">06.03.67.79.86</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">40 rue daussy 80300 albert</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Mes Coordonnées si vous voulez passez directement par vos propre moyens
+                </span>
+                </div>
+            </div>
+        </nav>
+        <!--fermeture div qui englobe tout-->
+    </div>
+    <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js " integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js " integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG " crossorigin="anonymous "></script>
+    <script src="regex.js"></script>
+</body>
+
+</html>
